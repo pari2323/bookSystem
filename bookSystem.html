@@ -1,1 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+        <title>Book System </title>
+        
+        <!-- <script src="./dummy.js"></script> -->
+    </head>
+    <body>
+        <h1> Book Management System</h1>
+        <form>
+            <fieldset>
+                <legend>Book Details</legend><br>
+                <label for="bookName"> Book Name</label><br>
 
+                <input type="text" id="bookName" name="bookName" placeholder="Enter Book Name">
+                    <br><br>
+                <label for="authorName">Author name </label><br>
+                <input type="text" id="authorName" name ="authorName" placeholder="Enter Author Name">
+                    <br><br>
+                <label for="pagesTime">No. of Pages Time</label><br>
+                <input type="number" id="pagesTime" name="pagesTime" placeholder="Approx reading time in Min">
+                <br><br>
+            </fieldset>
+            <br><br>
+            <fieldset>
+                <label for="bookDescription">Book Description</label><br>
+                <textarea  id="bookDescription" name="bookDescription" placeholder="Enter description of book" rows="5"></textarea>
+                <br><br>
+            </fieldset>
+        </form>
+        <br><br>
+        <button id ="addBook">Add Book</button>
+        <div id="books"></div>
+        <script src="./bookSystem.js"></script>
+    </body>
+    
+</html>
